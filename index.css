@@ -1,0 +1,304 @@
+/* Font */
+@font-face {
+  font-family: "Gunny Rewritten";
+  src: url(assets/fonts/gnyrwn971.ttf);
+}
+
+/* Global styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Gunny Rewritten";
+  color: var(--text1);
+  letter-spacing: 0.1rem;
+  scroll-behavior: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Root container */
+.root {
+  --link: #1a7ce8;
+  background-repeat: repeat;
+}
+
+/* Main container */
+.container-main {
+  max-width: 100vw;
+  --text1: black;
+  --text2: #505867;
+  --theme1: #42464e;
+  --theme2: rgba(66, 70, 78, 0.1);
+  --theme3: rgba(66, 70, 78, 0.05);
+  --same: white;
+  --navtxt: #1d2bc7;
+  background-image: url(assets/images/white_dotted_paper_sqr_bg.jpg);
+}
+
+.container-main.dark {
+  --text1: #f0f0f0;
+  --text2: #505867;
+  --theme1: #888e9b;
+  --theme2: rgba(255, 255, 255, 0.4);
+  --theme3: rgba(211, 211, 211, 0.2);
+  --same: black;
+  --navtxt: #1a7ce8;
+  background: #1f1212;
+  background-image: url(assets/images/white_dotted_paper_sqr_bg_dark.jpg);
+}
+
+/* Navbar */
+.nav-container {
+  width: 100vw;
+  min-height: 7vh;
+}
+.nav-container.bg {
+  background-color: var(--theme3);
+}
+
+nav {
+  min-height: 7vh;
+  min-height: 7dvh;
+  width: 100vw;
+  padding: 1.5vh 3.5vw;
+}
+
+nav h2 {
+  color: var(--link);
+  text-shadow: var(--text1);
+}
+
+.nav-container.bg h2 {
+  color: var(--navtxt);
+  text-shadow: 50px #000;
+}
+
+nav i {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.5rem 0;
+  text-shadow: 10px 10px 0px var(--text1);
+}
+
+nav i.bx-sun {
+  color: #f0f0f0;
+  text-shadow: var(--text1);
+}
+
+nav i.bxs-moon {
+  color: #505867;
+  text-shadow: var(--text1);
+}
+
+nav i.bx-dots-horizontal-rounded {
+  color: var(--text1);
+  text-shadow: var(--text1);
+}
+
+/* Wrapper Main */
+.wrapper-main {
+  color: var(--text1);
+  padding: 0vh 10vw;
+}
+
+/* Button styles */
+button,
+button:active,
+button:hover {
+  outline: none;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  filter: brightness(90%);
+}
+
+.clickable:active {
+  transform: scale(95%);
+}
+
+/* Header */
+header .header-container {
+  flex-direction: column;
+  margin-top: 5vh;
+  
+} 
+
+header img {
+  margin-right: 2vw;
+  max-height: 70vh;
+  max-width: 80vw;
+  width: auto;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  max-width: fit-content;
+  padding: 0.1rem 0.25rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.1rem 0.25rem;
+}
+
+.header_links {
+  padding: 0.1rem 0.25rem;
+}
+
+.header_links a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--link);
+}
+
+.header_links .bx {
+  padding: 0.2rem 0.2rem 0;
+  text-decoration: none;
+  color: var(--link);
+}
+
+.header_links .txt {
+  color: var(--link);
+}
+
+.header_links .social .cmt,
+.header_links .login .cmt {
+  color: var(--text2);
+  margin: 2vh 0;
+}
+
+.header_links .social .icons a i {
+  color: var(--text1);
+}
+
+.header_links .login button .sign-in {
+  background-image: url(assets/images/button_bg.jpg);
+  border: 2px solid --text2;
+  border-radius: 0.25rem;
+}
+
+.header_links .login button .sign-in p {
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+  font-size: 1.25rem;
+  padding: 0.2rem 1.2rem;
+}
+
+.header_links .login button .info p {
+  font-size: 1rem;
+}
+
+/* Main */
+main {
+  margin-top: 5vh;
+  height: 25vh;
+  min-height: max-content;
+  border-bottom: 1px dotted var(--theme2);
+  box-shadow: 0 3px 10px var(--theme3);
+  color: var(--text1);
+}
+
+.main-nav {
+  border: 1px dotted var(--theme2);
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--theme3);
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu button {
+  padding-top: 0.2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 3px 0 3px var(--theme3);
+}
+
+.scrollmenu button h3 {
+  padding: 0.2rem 0.5rem;
+}
+
+div.scrollmenu button h3:hover {
+  background-color: var(--theme3);
+}
+
+.section-title {
+  margin: 0.3rem 1rem;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Aside */
+/* aside {
+  margin-top: 5vh;
+} */
+
+aside button {
+  padding: 0.5rem 0.9rem;
+}
+
+aside button p,
+aside button a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--link);
+  margin: 0 0.2rem;
+}
+
+.top-container {
+  margin-top: 3vh;
+}
+
+.top-container h5 {
+  font-size: 1rem;
+}
+
+.top-container .wrapper {
+  padding: 0.5rem 0;
+}
+
+.top-container .wrapper p {
+  font-size: 0.85rem;
+  margin: 0.3rem 0.5rem;
+  padding: 0.125rem 1rem;
+  border: 1px solid var(--text1);
+  border-radius: 1.2rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 3vh;
+}
+
+/* Mobile hover styles */
+/* This removes hover styles on touch devices like mobile phones or tablets */
+@media (hover: none) {
+  button:hover {
+    filter: brightness(100%);
+  }
+}
+
+/* Remove margin for main section if header height is less than 95vh */
+/* Use JavaScript to get header height */
+/* For example, in JavaScript you could do:
+   const headerHeight = document.querySelector('header').offsetHeight;
+   const main = document.querySelector('main');
+   main.style.marginTop = headerHeight < 95 ? '0' : '5vh';
+*/
+
+/* ... Remaining styles ... */

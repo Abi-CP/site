@@ -1,0 +1,32 @@
+@media screen and (min-width: 1000px){
+    html {
+        font-size: 20px;
+    }
+
+    .base {
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    nav {
+        height: 10vh;
+    }
+    
+    .header-container {
+        flex-direction: row !important;
+        margin-top: 8vh !important;
+    }
+
+    .header-container .img {
+        min-width: 40vw;
+    }
+
+    .top-container h5 {
+        text-align: center;
+    }
+
+    .top-container .wrapper {
+        margin-bottom: 5vh;
+    }
+
+} 

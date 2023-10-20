@@ -1,0 +1,48 @@
+/* Flex */
+.flex {
+  display: flex;
+}
+.fdc {
+  flex-direction: column;
+}
+.fdr {
+  flex-direction: row;
+}
+.fww {
+  flex-wrap: wrap;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcse {
+  justify-content: space-evenly;
+}
+.aic {
+  align-items: center;
+}
+/* Display */
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.dnone {
+  display: none;
+}
+/* Position */
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
