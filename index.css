@@ -30,6 +30,7 @@
   max-width: 100vw;
   --text1: black;
   --text2: #505867;
+  --theme0: rgb(221, 221, 221);
   --theme1: #42464e;
   --theme2: rgba(66, 70, 78, 0.1);
   --theme3: rgba(66, 70, 78, 0.05);
@@ -41,6 +42,7 @@
 .container-main.dark {
   --text1: #f0f0f0;
   --text2: #505867;
+  --theme0: rgb(37, 37, 37);
   --theme1: #888e9b;
   --theme2: rgba(255, 255, 255, 0.4);
   --theme3: rgba(211, 211, 211, 0.2);
@@ -48,6 +50,10 @@
   --navtxt: #1a7ce8;
   background: #1f1212;
   background-image: url(assets/images/white_dotted_paper_sqr_bg_dark.jpg);
+}
+
+body{
+  background-color: var(--theme0);
 }
 
 /* Navbar */
@@ -126,16 +132,14 @@ button:hover {
 
 /* Header */
 header .header-container {
-  flex-direction: column;
-  margin-top: 5vh;
-  
-} 
+  min-height: 100vh;
+  min-height: 100dvh;
+}
 
 header img {
+  width: 80vw;
+  padding: 6vh 0 0;
   margin-right: 2vw;
-  max-height: 70vh;
-  max-width: 80vw;
-  width: auto;
 }
 
 header h1 {
@@ -243,9 +247,9 @@ div.scrollmenu button h3:hover {
 }
 
 /* Aside */
-/* aside {
+aside {
   margin-top: 5vh;
-} */
+}
 
 aside button {
   padding: 0.5rem 0.9rem;
