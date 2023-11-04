@@ -30,6 +30,7 @@
   max-width: 100vw;
   --text1: black;
   --text2: #505867;
+  --theme0: rgb(221, 221, 221);
   --theme1: #42464e;
   --theme2: rgba(66, 70, 78, 0.1);
   --theme3: rgba(66, 70, 78, 0.05);
@@ -41,6 +42,7 @@
 .container-main.dark {
   --text1: #f0f0f0;
   --text2: #505867;
+  --theme0: rgb(37, 37, 37);
   --theme1: #888e9b;
   --theme2: rgba(255, 255, 255, 0.4);
   --theme3: rgba(211, 211, 211, 0.2);
@@ -48,6 +50,10 @@
   --navtxt: #1a7ce8;
   background: #1f1212;
   background-image: url(assets/images/white_dotted_paper_sqr_bg_dark.jpg);
+}
+
+body{
+  background-color: var(--theme0);
 }
 
 /* Navbar */
