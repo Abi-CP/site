@@ -53,7 +53,7 @@
 }
 
 body{
-  background-color: var(--theme0);
+  background: var(--theme0);
 }
 
 /* Navbar */
@@ -134,6 +134,10 @@ button:hover {
 header .header-container {
   min-height: 100vh;
   min-height: 100dvh;
+}
+
+.header-container{
+  flex-direction: column !important;
 }
 
 header img {
