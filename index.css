@@ -52,11 +52,7 @@
 }
 
 .container-main{
-  background-image: --paper-bg;
-}
-
-.container-main{
-  background-image: --paper-bg;
+  background-image: var(--paper-bg);
 }
 
 /* Navbar */
