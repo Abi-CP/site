@@ -51,6 +51,13 @@
   --paper-bg: url(assets/images/white_dotted_paper_sqr_bg_dark.jpg);
 }
 
+.container-main{
+  background-image: --paper-bg;
+}
+
+.container-main{
+  background-image: --paper-bg;
+}
 
 /* Navbar */
 .nav-container {
