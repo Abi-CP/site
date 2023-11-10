@@ -14,7 +14,7 @@ document.addEventListener("scroll", () => {
 const themeButton = document.querySelector(".theme-button");
 const containerMainClassList = document.querySelector(".container-main").classList;
 const themeButtonClassList = themeButton.classList;
-
+const body = document.querySelector("body");
 // Theme switch
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
   activateDark();
@@ -32,6 +32,7 @@ function activateDark() {
   themeButtonClassList.remove("bxs-moon");
   containerMainClassList.toggle("dark");
   themeButtonClassList.add("bx-sun");
+  document.body.style.backgroundColor = "black";
 }
 
 function removeDark() {
@@ -39,6 +40,7 @@ function removeDark() {
   containerMainClassList.toggle("dark");
   themeButtonClassList.add("bxs-moon");
   console.log("removeDark");
+  body.style.backgroundColor = "white";
 }
 
 // Routing
