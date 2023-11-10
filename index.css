@@ -55,6 +55,10 @@
   background-image: --paper-bg;
 }
 
+.container-main{
+  background-image: --paper-bg;
+}
+
 /* Navbar */
 .nav-container {
   width: 100vw;
