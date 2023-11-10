@@ -1,3 +1,15 @@
+
+.clickable {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.clickable:hover {
+  filter: brightness(90%);
+}
+.clickable:active {
+  transform: scale(95%);
+}
+
 /* Flex */
 .flex {
   display: flex;

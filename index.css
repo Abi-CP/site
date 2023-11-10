@@ -117,18 +117,6 @@ button:hover {
   border: 1px solid transparent;
 }
 
-.clickable {
-  cursor: pointer;
-}
-
-.clickable:hover {
-  filter: brightness(90%);
-}
-
-.clickable:active {
-  transform: scale(95%);
-}
-
 /* Header */
 header .header-container {
   min-height: 100vh;
