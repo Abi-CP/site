@@ -8,13 +8,15 @@
         min-height: 100dvh;
     }
 
-    nav {
-        height: 10vh;
+    .nav-container{
+        width: 5vw;
+        backdrop-filter: blur(100%);
+        left: 0;
     }
     
     .header-container {
         flex-direction: row !important;
-        margin-top: 8vh !important;
+        /* margin-top: 8vh !important; */
     }
 
     .header-container .img {

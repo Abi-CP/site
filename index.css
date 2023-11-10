@@ -57,8 +57,9 @@
 
 /* Navbar */
 .nav-container {
-  width: 100vw;
-  min-height: 7vh;
+  width: 15vw;
+  min-height: 100vh;
+  right: 0;
 }
 .nav-container.bg {
   background-color: var(--theme3);
@@ -129,7 +130,7 @@ header .header-container {
 
 header img {
   width: 80vw;
-  padding: 6vh 0 0;
+  padding: 4.5vh 0 0;
   margin-right: 2vw;
 }
 
