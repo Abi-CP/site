@@ -132,16 +132,14 @@ button:hover {
 
 /* Header */
 header .header-container {
-  flex-direction: column;
-  margin-top: 5vh;
-  
-} 
+  min-height: 100vh;
+  min-height: 100dvh;
+}
 
 header img {
+  width: 80vw;
+  padding: 6vh 0 0;
   margin-right: 2vw;
-  max-height: 70vh;
-  max-width: 80vw;
-  width: auto;
 }
 
 header h1 {
@@ -249,9 +247,9 @@ div.scrollmenu button h3:hover {
 }
 
 /* Aside */
-/* aside {
+aside {
   margin-top: 5vh;
-} */
+}
 
 aside button {
   padding: 0.5rem 0.9rem;
