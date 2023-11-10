@@ -227,14 +227,26 @@ main {
   padding: 0.2rem 0.5rem;
 }
 
-div.scrollmenu button h3:hover {
-  background-color: var(--theme3);
-}
-
-.section-title {
+.section-title{
   margin: 0.3rem 1rem;
   display: inline-block;
   text-align: center;
+}
+
+.scrollmenu button div, div.scrollmenu h3 {
+  display: inline;
+}
+
+.scrollmenu button {
+  display: inline-block;
+  color: var(--text1);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scrollmenu button:hover {
+  background-color: #7777771e;
 }
 
 /* Aside */
