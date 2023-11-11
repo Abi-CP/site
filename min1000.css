@@ -10,7 +10,7 @@
 
     .nav-container{
         width: 5vw;
-        backdrop-filter: blur(100%);
+        /* backdrop-filter: blur(100); */
         left: 0;
     }
     
