@@ -90,7 +90,7 @@
 .nav-container .site-settings{
   font-size: 1.5rem;
   height: 20vh;
-  bottom: 0;
+  bottom: 3vh;
   width: inherit;
 }
 
@@ -276,7 +276,7 @@ aside button a {
 }
 
 .top-labels{
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 /* Footer */
