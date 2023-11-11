@@ -1,12 +1,13 @@
+const body = document.querySelector("body");
+
 // Navbar background change on scroll
 const nav = document.querySelector(".nav-container");
-var activatedCount = 0;
-
+var navActiveFlag = 0;
+let pausedNav = false;
 document.addEventListener("scroll", () => {
-  if (activatedCount < 1){
+  if (navActiveFlag < 1){
     console.log("scroll")
-    nav.classList.add("active");
-    activatedCount++;
+    activateNav();
   }
 });
 
@@ -17,10 +18,31 @@ document.addEventListener("scrollend", () => {
 });
 
 
+let startX;
+
+body.addEventListener('touchstart', handleTouchStart);
+body.addEventListener('touchend', handleTouchEnd);
+
+function handleTouchStart(event) {
+  startX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+  const endX = event.changedTouches[0].clientX;
+  const deltaX = endX - startX;
+
+  const swipeThreshold = 50;
+  if (deltaX < -swipeThreshold) {
+    console.log('Swiped left!');
+    activateNav();
+    setTimeout(removeNav, 1500);
+  }
+}
+
+//Theme
 const themeButton = document.querySelector(".theme-button");
 const containerMainClassList = document.querySelector(".container-main").classList;
 const themeButtonClassList = themeButton.classList;
-const body = document.querySelector("body");
 // Theme switch
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
   activateDark();
@@ -46,18 +68,37 @@ function removeDark() {
   containerMainClassList.toggle("dark");
   themeButtonClassList.add("bxs-moon");
   console.log("removeDark");
-  body.style.backgroundColor = "white";
+  body.style.backgroundColor = "white"; 
+}
+
+function activateNav(){
+  nav.classList.add("active");
+  navActiveFlag++;
+}
+
+function pauseNav(){
+  pausedNav = true;
+  console.log("pNav");
+}
+
+function removePauseNav(){
+  pausedNav = false;
+  console.log("pRemNav");
+  setTimeout(removeNav, 500);
 }
 
 function removeNav(){
-  console.log("rNav");
-  nav.classList.remove("active");
-  activatedCount--;
+  if (pausedNav == false){
+    console.log("rNav");
+    nav.classList.remove("active");
+    navActiveFlag--;
+  }
+  
 }
-removeNav();
 
 // Routing
 
 
 // Check for full load
 console.log('js loaded successfully');
+removeNav();

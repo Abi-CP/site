@@ -16,16 +16,21 @@
   <div class="root" id="root">
     <!-- Base container for the main content -->
     <div class="base container-main">
+      <h2 class="clickable title-abi fixed">abi.cp</h2>
+
       <!-- Navigation container -->
-      <div class="nav-container fixed">
+      <div  onmouseover="pauseNav()" onmouseleave="removePauseNav()" class="nav-container fixed">
         <!-- Navigation section -->
-        <nav class="nav flex fdc aic jcsb">
-          <h2 class="clickable">abi.cp</h2>
-          <div class="flex">
-            <i class="bx bxs-moon theme-button clickable"></i>
-            <i class="bx bx-dots-horizontal-rounded clickable dnone"></i>
-          </div>
+        <nav class="section-nav fixed flex fdc aic jcse">
+          <i class='bx bx-home'></i>
+          <i class='bx bx-layout'></i>
+          <i class='bx bx-conversation'></i>
         </nav>
+        <div class="site-settings fixed flex fdc jcse aic">
+          <i class="bx bxs-moon theme-button clickable"></i>
+          <i class='bx bx-user-circle' ></i>
+          <i class="bx bx-dots-horizontal-rounded clickable"></i>
+        </div>
       </div>
 
       <!-- Main content wrapper -->

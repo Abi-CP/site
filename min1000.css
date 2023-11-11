@@ -10,13 +10,15 @@
 
     .nav-container{
         width: 5vw;
-        /* backdrop-filter: blur(100); */
-        left: 0;
+        right: -15vw;
     }
-    
+
     .header-container {
         flex-direction: row !important;
-        /* margin-top: 8vh !important; */
+    }
+
+    header img {
+        padding: 2vh 0 0;
     }
 
     .header-container .img {
