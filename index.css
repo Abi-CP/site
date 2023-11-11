@@ -59,10 +59,15 @@
 .nav-container {
   width: 15vw;
   min-height: 100vh;
-  right: 0;
-}
-.nav-container.bg {
+  right: -15vw;
+  backdrop-filter: blur(5px);
   background-color: var(--theme3);
+  transition: transform 250ms ease-out;
+}
+
+.nav-container.active {
+  transform: translateX(-15vw);
+  transition: transform 250ms ease-in;
 }
 
 nav {
@@ -116,18 +121,6 @@ button:hover {
   outline: none;
   background: transparent;
   border: 1px solid transparent;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-.clickable:hover {
-  filter: brightness(90%);
-}
-
-.clickable:active {
-  transform: scale(95%);
 }
 
 /* Header */
@@ -240,14 +233,26 @@ main {
   padding: 0.2rem 0.5rem;
 }
 
-div.scrollmenu button h3:hover {
-  background-color: var(--theme3);
-}
-
-.section-title {
+.section-title{
   margin: 0.3rem 1rem;
   display: inline-block;
   text-align: center;
+}
+
+.scrollmenu button div, div.scrollmenu h3 {
+  display: inline;
+}
+
+.scrollmenu button {
+  display: inline-block;
+  color: var(--text1);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scrollmenu button:hover {
+  background-color: #7777771e;
 }
 
 /* Aside */

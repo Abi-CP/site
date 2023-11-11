@@ -1,15 +1,21 @@
 // Navbar background change on scroll
 const nav = document.querySelector(".nav-container");
-document.addEventListener("scroll", () => {
-  nav.classList.add("bg");
+var activatedCount = 0;
 
-  if (window.scrollY > 10) {
-    nav.style.backdropFilter = "blur(5px)";
-  } else {
-    nav.classList.remove("bg");
-    nav.style.backdropFilter = "none";
+document.addEventListener("scroll", () => {
+  if (activatedCount < 1){
+    console.log("scroll")
+    nav.classList.add("active");
+    activatedCount++;
   }
 });
+
+// nav.addEventListener("hover")
+document.addEventListener("scrollend", () => {
+  console.log("scrollend");
+  setTimeout(removeNav, 1500);
+});
+
 
 const themeButton = document.querySelector(".theme-button");
 const containerMainClassList = document.querySelector(".container-main").classList;
@@ -42,6 +48,13 @@ function removeDark() {
   console.log("removeDark");
   body.style.backgroundColor = "white";
 }
+
+function removeNav(){
+  console.log("rNav");
+  nav.classList.remove("active");
+  activatedCount--;
+}
+removeNav();
 
 // Routing
 
