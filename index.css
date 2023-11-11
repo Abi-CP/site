@@ -121,7 +121,7 @@ header .header-container {
 
 header img {
   width: 80vw;
-  padding: 4.5vh 0 0;
+  padding: 7vh 0 2vh;
   margin-right: 2vw;
 }
 
@@ -238,9 +238,9 @@ main {
 }
 
 /* Aside */
-aside {
+/* aside {
   margin-top: 5vh;
-}
+} */
 
 aside button {
   padding: 0.5rem 0.9rem;
@@ -254,10 +254,10 @@ aside button a {
   color: var(--link);
   margin: 0 0.2rem;
 }
-
+/* 
 .top-container {
   margin-top: 3vh;
-}
+} */
 
 .top-container h5 {
   font-size: 1rem;
@@ -275,9 +275,13 @@ aside button a {
   border-radius: 1.2rem;
 }
 
+.top-labels{
+  margin-top: 5vh;
+}
+
 /* Footer */
 footer {
-  margin-top: 3vh;
+  margin-top: 5vh;
 }
 
 /* Mobile hover styles */
